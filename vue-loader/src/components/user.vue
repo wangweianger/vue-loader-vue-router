@@ -23,6 +23,7 @@
 </template>
 
 <script>
+
 export default {
   data () {
     return {
@@ -30,7 +31,7 @@ export default {
     }
   },
   ready:function(){
-	console.log(this.$route.query)
+    $('.container').css({background:'#ccc'})
   }
 }
 

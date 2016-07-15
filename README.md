@@ -1,7 +1,13 @@
-# vue组件化开发体验-示例vue-loader-vue-router学习记录
+# vue组件化开发-示例
 
->  * 使用了vuejs和webpack，以及一系列webpack加载器，如vue-loader,vue-router
->  * 根据官网的例子后再经过自己的一些思路进行了增强
+>  * 使用知识点：
+>  * vue.js           轻量级mvvm框架
+>  * webpack          前端自动话打包工具
+>  * vue-router       vue路由
+>  * vue-loader       vue组件化开发插件
+>  * vuex             前端状态管理 类式于flux 和 radux
+>  * babel            es6转译工具，用最前言的javascript做前端开发
+
 
 ## 目录结构
 
@@ -24,10 +30,21 @@
       + index.vue
       + user.vue
       + userDetails.vue
+  -vuex  //状态等管理
+    -actions  
+      +indexActions.js
+      ...
+    -modles
+      +indexModles.js
+      ...
+    +getters.js
+    +mutation-types.js
+    +store.js
     + app.vue //布局文件
     + main.js  //入口文件
     + filter.js //vue的过滤器
     + router.js //vue路由插件
+
 ```
 
 ## 项目步骤
@@ -65,5 +82,5 @@ vue.js  : vue.js  清量级的mvvm的框架
 babel   : 项目使用babel编译 可用最新的es6编写我们的javascript （当然用es5写也是一样的）
 vue-loader ：模块化的开发vue插件
 vue-router ：vue的路由插件
-
+vuex  :  一个专门为 Vue.js 应用设计的状态管理架构
 ```

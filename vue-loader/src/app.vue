@@ -1,5 +1,11 @@
+
 <template>
    <router-view></router-view>
 </template>
 
-<style src="./assets/css/base.css"></style>
+<script>
+  import store from './vuex/store';
+  export default {
+    store,
+  }
+</script>

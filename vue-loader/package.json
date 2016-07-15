@@ -4,7 +4,7 @@
   "description": "demo",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --port 8000 --inline --hot --colors --config build/webpack.dev.config.js",
+    "dev": "webpack-dev-server --port 2000 --inline --hot --colors --config build/webpack.dev.config.js",
     "build": "webpack -p --progress --hide-modules --colors --config build/webpack.product.config.js"
   },
   "author": "wanwei",
@@ -15,8 +15,10 @@
     "babel-plugin-transform-runtime": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-stage-2": "^6.11.0",
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.5",
+    "imports-loader": "^0.6.5",
     "jquery": "^3.1.0",
     "style-loader": "^0.13.0",
     "template-html-loader": "0.0.3",
@@ -29,6 +31,7 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
-    "vue": "^1.0.10"
+    "vue": "^1.0.10",
+    "vuex": "^0.8.0"
   }
 }
